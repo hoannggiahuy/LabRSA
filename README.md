@@ -8,4 +8,15 @@ Dropdown chọn:
 Tạo khóa RSA
 Ký dữ liệu
 Xác minh chữ ký
-
+![image](https://github.com/user-attachments/assets/b4135549-9c55-409c-8674-9e86db17fcb6)
+Tạo một cặp khóa RSA (2048 bit)
+Trả về:
+private_key: Khóa riêng
+public_key: Khóa công khai
+Nhận:
+Dữ liệu (chuỗi bytes)
+Khóa riêng (private key)
+Dùng thuật toán băm SHA256 -> ký với PKCS#1 v1.5
+Trả về chữ ký (base64)
+Xác minh xem chữ ký có hợp lệ với dữ liệu và khóa công khai hay không
+Trả về True nếu chữ ký đúng, ngược lại False
